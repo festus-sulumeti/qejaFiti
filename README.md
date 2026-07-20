@@ -1,75 +1,88 @@
-# React + TypeScript + Vite
+# Qejafiti
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Qejafiti is a modern, responsive web application The project is designed to deliver a polished user experience for a property and rental-focused platform, with a clear structure for future growth and feature expansion.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This repository currently provides the frontend foundation for the Qejafiti experience, including a streamlined landing experience, reusable UI components, and a modular structure suitable for scaling into a larger product.
 
-## React Compiler
+## Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Responsive and modern user interface
+- Component-based frontend architecture
+- Reusable UI primitives for consistent design
+- Fast development workflow powered by Vite
+- Clean navigation and hero section experience
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Project Structure
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```text
+src/
+├── assets/
+├── components/
+│   └── HeroSection/
+│       ├── Footer.tsx
+│       ├── Hero.tsx
+│       └── Navbar.tsx
+├── lib/
+│   └── utils.ts
+├── App.tsx
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Prerequisites
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Node.js 18 or later
+- npm or yarn
 
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/festus-sulumeti/qejafiti.git
+cd qejafiti
 ```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+
+## Available Scripts
+
+```bash
+npm run dev     # Start the development server
+npm run build   # Create a production build
+npm run preview # Preview the production build locally
+npm run lint    # Run ESLint checks
+```
+
+## Contributing
+
+Contributions are welcome. To contribute:
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Commit and push your branch
+5. Open a pull request
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For questions or collaboration opportunities, please reach out through the project repository.
