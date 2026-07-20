@@ -2,7 +2,46 @@ import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom"
 import { Button } from "@/components/ui/button";
 import Navbar from './Navbar';
+
 import Footer from './Footer';
+
+
+import { Section, Container } from "@/components/craft";
+import Balancer from "react-wrap-balancer";
+import type { ReactNode } from "react";
+import {
+  Coins,
+  Building2,
+  Users,
+} from "lucide-react";
+
+type FeatureText = {
+  icon: ReactNode;
+  title: string;
+  description: string;
+};
+
+const featureText: FeatureText[] = [
+  {
+    icon: <Building2 className="h-6 w-6" />,
+    title: "Property Management",
+    description:
+      "Manage all your rental properties from a single dashboard. Keep track of units, occupancy, leases, and property details with ease.",
+  },
+  {
+    icon: <Coins className="h-6 w-6" />,
+    title: "Rent Collection",
+    description:
+      "Simplify rent payments with secure online collection, payment tracking, automated reminders, and detailed financial records.",
+  },
+  {
+    icon: <Users className="h-6 w-6" />,
+    title: "Tenant Management",
+    description:
+      "Store tenant information, manage lease agreements, handle maintenance requests, and improve communication through one centralized platform.",
+  },
+
+]
 
 export default function Hero() {
   return (
@@ -51,6 +90,35 @@ export default function Hero() {
             </Button>
           </div>
        </section>
+
+        <Section className="border-b">
+      <Container className="not-prose">
+        <div className="flex flex-col gap-6">
+          <h3 className="text-4xl">
+            <Balancer>
+                Everything You Need to Manage Rental Properties
+            </Balancer>
+          </h3>
+          <h4 className="text-2xl font-light opacity-70">
+            <Balancer>
+               Qejafiti streamlines property management by bringing landlords, tenants, payments, and maintenance together in one secure and easy-to-use platform.
+            </Balancer>
+          </h4>
+
+          <div className="mt-6 grid gap-6 md:mt-12 md:grid-cols-3">
+            {featureText.map(({ icon, title, description }, index) => (
+              <div className="flex flex-col gap-4" key={index}>
+                {icon}
+                <h4 className="text-xl text-primary">{title}</h4>
+                <p className="text-base opacity-75">{description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Container>
+    </Section>
+
+       
       <Footer />
     </>
   
