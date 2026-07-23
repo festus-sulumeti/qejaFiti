@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { Link }  from "react-router-dom"
 
 
 
@@ -131,12 +132,12 @@ export default function Signup() {
 
         <p className="mt-6 text-pretty text-center text-muted-foreground text-sm dark:text-muted-foreground">
           Already have an account?{' '}
-          <a
+          <Link
             className="font-medium text-primary hover:text-primary/90 dark:text-primary hover:dark:text-primary/90"
-            href="#"
+            to="/login"
           >
             Sign in
-          </a>
+          </Link>
         </p>
       </div>
     </div>
