@@ -1,10 +1,10 @@
-# Qejafiti
+# rentalMS
 
-Qejafiti is a modern, responsive web application The project is designed to deliver a polished user experience for a property and rental-focused platform, with a clear structure for future growth and feature expansion.
+rentalMS is a modern, responsive web application The project is designed to deliver a polished user experience for a property and rental-focused platform, with a clear structure for future growth and feature expansion.
 
 ## Overview
 
-This repository currently provides the frontend foundation for the Qejafiti experience, including a streamlined landing experience, reusable UI components, and a modular structure suitable for scaling into a larger product.
+This repository currently provides the frontend foundation for the rentalMS experience, including a streamlined landing experience, reusable UI components, and a modular structure suitable for scaling into a larger product.
 
 ## Key Features
 
@@ -43,8 +43,8 @@ src/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/festus-sulumeti/qejafiti.git
-cd qejafiti
+git clone https://github.com/festus-sulumeti/rentalMS.git
+cd rentalMS
 ```
 
 2. Install dependencies:
