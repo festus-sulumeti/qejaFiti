@@ -73,7 +73,7 @@ export default function Hero() {
             </h1>
 
             <p className="mx-auto mb-8 max-w-2xl text-center font-light text-lg text-white/90 md:text-xl">
-              Qejafiti simplifies rental operations by bringing tenants, landlords, payments,
+              rentalMS simplifies rental operations by bringing tenants, landlords, payments,
               maintenance, and property records together in one secure system.
             </p>
 
@@ -101,7 +101,7 @@ export default function Hero() {
           </h3>
           <h4 className="text-2xl font-light opacity-70">
             <Balancer>
-               Qejafiti streamlines property management by bringing landlords, tenants, payments, and maintenance together in one secure and easy-to-use platform.
+               rentalMS streamlines property management by bringing landlords, tenants, payments, and maintenance together in one secure and easy-to-use platform.
             </Balancer>
           </h4>
 

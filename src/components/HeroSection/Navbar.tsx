@@ -68,7 +68,7 @@ const Navbar = () => {
       <div className="mx-auto flex h-24 max-w-7xl items-center justify-between px-6 lg:px-12 xl:px-16">
         {/* Logo */}
         <Link to="/" className="text-2xl font-extrabold tracking-wide text-white">
-          Qeja<span className="text-green-500">Fiti</span>
+          Rental<span className="text-green-500">MS</span>
         </Link>
 
         {/* Desktop Navigation */}

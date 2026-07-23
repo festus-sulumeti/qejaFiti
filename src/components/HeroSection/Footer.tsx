@@ -46,7 +46,7 @@ const footerSections: FooterData[] = [
     title: "Platform",
     links: [
       {
-        title: "About Qejafiti",
+        title: "About rentalMS",
         href: "/about",
       },
       {
@@ -93,7 +93,7 @@ const Footer = () => {
               
 
                 <p className="text-base font-normal ">
-                    Qejafiti is a modern rental management platform that helps landlords,
+                    rentalMS is a modern rental management platform that helps landlords,
                     property managers, and tenants simplify property management, rent
                     collection, maintenance requests, and communication from one place.
                 </p>
@@ -161,10 +161,10 @@ const Footer = () => {
 
                 <li>
                     <a
-                    href="mailto:info@qejafiti.com"
+                    href="mailto:info@rentalMS.com"
                     className="text-base font-normal"
                     >
-                    info@qejafiti.com
+                    info@rentalMS.com
                     </a>
                 </li>
 
@@ -182,7 +182,7 @@ const Footer = () => {
           </div>
           <Separator orientation="horizontal" />
           <p className="text-sm font-normal text-center animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-100 ease-in-out fill-mode-both">
-            ©2026 QejaFiti. All Rights Reserved
+            ©2026 rentalMS. All Rights Reserved
           </p>
         </div>
       </div>
